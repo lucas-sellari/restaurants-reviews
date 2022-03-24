@@ -1,0 +1,1 @@
+Projeto simples para praticar a stack MERN e a utilização do git. :)
