@@ -11,7 +11,7 @@ export default class restaurantsController {
             filters.name = req.query.name;
         } else if (req.query.cuisine) {
             filters.cuisine = req.query.cuisine;
-        } else if (req.zipcode) {
+        } else if (req.query.zipcode) {
             filters.zipcode = req.query.zipcode;
         }
 

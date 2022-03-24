@@ -22,7 +22,7 @@ export default class restaurantsDAO {
 
         if (filters) {
             if ("name" in filters) {
-                query = { "name": { $eq: filters["name"] } };
+                query = { $text: { $search: filters["name"] } };
             } else if ("cuisine" in filters) {
                 query = { "cuisine": { $eq: filters["cuisine"] } };
             } else if ("zipcode" in filters) {
