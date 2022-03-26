@@ -15,8 +15,8 @@ const RestaurantCard = ({ restaurant }) => {
       </h2>
 
       <footer className="restaurant-card__footer">
-        <button className="restaurant-card__button">View reviews</button>
-        <button className="restaurant-card__button">View in map</button>
+        <Link to={`/${restaurant._id}/reviews`} className="restaurant-card__button">View reviews</Link>
+        <Link to={`/${restaurant._id}/map`} className="restaurant-card__button">View in map</Link>
       </footer>
     </div>
   );
